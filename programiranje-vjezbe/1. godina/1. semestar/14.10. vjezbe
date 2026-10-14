@@ -1,0 +1,99 @@
+1. zadatak
+
+#include <iostream>
+using namespace std;
+int main() {
+	unsigned int x,n,povecani;
+	cout<<"Unesite prirodan broj x: ";
+	cin>>x;
+	cout<<"Unesite broj n: ";
+	cin>>n;
+	povecani=x+n;
+	cout<<"Broj koji ste unijeli je: "<<x<<", a inkrement je: "<<povecani;	
+	return 0;
+}
+
+2. zadatak
+
+#include <iostream>
+using namespace std;
+int main() {
+	int a,b;
+	while(1){
+		cout<<"Korisnik 1. unesite broj izmedu -10 i 10: ";
+		cin>>a;
+		if(a>10 || a<-10){
+		continue;
+		}
+		else
+		break;
+	}
+		system("cls");
+		
+	cout<<"Korisnik 2."<<endl;
+	
+	
+	for(int i=0;i<3;i++){
+	cout<<"Unesite broj: ";
+	cin>>b;
+	if(b!=a){
+		cout<<"Krivo"<<endl;
+		continue;
+	}
+	else if(b==a){
+		cout<<"Bravo!"<<endl;
+		return 0;
+	}
+	}
+	cout<<"Neuspijeh";
+	system("pause");
+	return 0;
+
+	
+}
+
+3. zadatak
+
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+using namespace std;
+int main() {
+	int a,b;
+	cout<<"Unesite prvi broj: ";
+	cin>>a;
+	cout<<"Unesite drugi broj: ";
+	cin>>b;
+	
+	
+	
+	cout<<a<<" + "<<b<<" = "<<a+b<<endl;
+	cout<<a<<" - "<<b<<" = "<<a-b<<endl;
+	cout<<a<<" x "<<b<<" = "<<a*b<<endl;
+	cout<<a<<" / "<<b<<" = "<<(float)a/b<<endl;
+	float x1 = sqrt(a);
+	float x2 = sqrt(b);
+    cout<< "Korijen prvoga: " << setprecision(8) << x1 <<endl;
+    cout<< "Korijen drugoga: " << setprecision(8) << x2 <<endl;
+	
+return 0;
+	
+	
+
+}
+
+4. zadatak
+
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+using namespace std;
+int main() {
+	float a;
+	cout<<"Unesite broj za zaokruzivanje: ";
+	cin>>a;
+	
+	float zaokruzeni = a + 0.5;
+	
+	cout<<"Zaokruzeni broj je: "<<(int)zaokruzeni;
+}
